@@ -1,3 +1,4 @@
-<h1>Proyecto Dos</h1>
-<p>Esto es una pagina sobre el segundo proyecto</p>
 
+<listado-proyectos [listName]="'Listado de proyectos desde Servicio'" [proyectos]="proyectosService.proyectos()"></listado-proyectos>
+<p>Aqui deberia estar un componente que agregue al servicio</p>
+<add-proyecto (newProyecto)="proyectosService.addProyecto($event)"></add-proyecto>

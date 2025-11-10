@@ -4,6 +4,28 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   selector: 'app-home-page',
   standalone: true,
   imports: [],
+  styles: [`
+    h1 {
+      color: darkgreen;
+    }
+    .counter {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    button {
+      margin-right: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: darkgreen;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: green;
+    }
+  `],
   templateUrl: './homePage.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
