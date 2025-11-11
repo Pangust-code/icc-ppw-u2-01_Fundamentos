@@ -4,5 +4,6 @@
 <input type="text" placeholder="Nombre del proyecto" [value]="name()" (change)="changeName(txtName.value)" #txtName>
 <input type="text" placeholder="Descripcion del proyecto" [value]="description()"
   (change)="changeDescription(txtDescription.value)" #txtDescription>
-<button (click)="addProyecto()">Agregar</button>
+<button (click)="addProyecto()" >Agregar</button>
+<button (click)="deleteProyecto(1)" >Eliminar</button>
 </div>

@@ -4,6 +4,13 @@ import { ChangeDetectionStrategy, Component, output, signal } from '@angular/cor
   selector: 'add-proyecto',
   imports: [],
   templateUrl: './add-proyecto.html',
+  styles: [
+    `
+    button {
+      margin: 5px;
+    }
+    `
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AddProyecto {
@@ -13,6 +20,7 @@ export class AddProyecto {
   description = signal('');
   //input
   newProyecto = output<Proyecto>();
+  removeProyecto = output<number>();
 
   changeName(value: string) {
     this.name.set(value);
@@ -33,6 +41,10 @@ export class AddProyecto {
     this.name.set('');
     this.description.set('');
 
+  }
+
+  deleteProyecto(id: number) {
+    this.removeProyecto.emit(id);
   }
 
  }
