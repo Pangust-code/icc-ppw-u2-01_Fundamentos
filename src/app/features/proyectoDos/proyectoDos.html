@@ -1,5 +1,4 @@
 
 <listado-proyectos [listName]="'Listado de proyectos desde Servicio'" [proyectos]="proyectosService.proyectos()"></listado-proyectos>
-<p>Aqui deberia estar un componente que agregue al servicio</p>
 <add-proyecto (newProyecto)="proyectosService.addProyecto($event)"
              (removeProyecto)="proyectosService.deleteProyecto()"></add-proyecto>

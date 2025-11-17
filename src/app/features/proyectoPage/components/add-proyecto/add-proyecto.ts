@@ -15,7 +15,6 @@ import { ChangeDetectionStrategy, Component, output, signal } from '@angular/cor
 })
 export class AddProyecto {
 
-
   name = signal('');
   description = signal('');
   //input
