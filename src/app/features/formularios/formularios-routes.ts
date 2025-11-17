@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { Formulario } from "./pages/Formulario/FormularioPage";
 import { FormulariosDinamicos } from './pages/FormulariosDinamicos/FormulariosDinamicos';
+import { FormulariosMore } from "./pages/FormulariosMore/FormulariosMore";
 
 export const formulariosRoutes: Routes = [
 {
@@ -19,7 +20,7 @@ export const formulariosRoutes: Routes = [
       {
         path: 'more',
         title: 'Formularios Más Complejos',
-        component: Formulario,
+        component: FormulariosMore,
       },
       {
         path: '**',
