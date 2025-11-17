@@ -6,21 +6,6 @@ import { FormularioBasicosPage } from '../../../../utils/FormularioBasicosPage';
   selector: 'app-formulario',
   imports: [ReactiveFormsModule],
   templateUrl: './FormularioPage.html',
-  styles: [
-    `
-    form {
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-    },
-    div {
-      margin-bottom: 1rem;
-      padding-top: 0.5rem;
-    },
-  `,
-  ],
-
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Formulario {
