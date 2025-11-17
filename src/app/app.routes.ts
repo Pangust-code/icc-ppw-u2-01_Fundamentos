@@ -4,7 +4,7 @@ import { HomePage } from './features/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
 import { ProyectoPage } from './features/proyectoPage/proyectoPage';
 import { ProyectoDos } from './features/proyectoDos/proyectoDos';
-import { Formulario } from './features/Formulario/Formulario/FormularioPage';
+import { Formulario } from './features/formularios/pages/Formulario/FormularioPage';
 
 export const routes: Routes = [
   {
@@ -23,9 +23,13 @@ export const routes: Routes = [
     path: 'proyecto-dos',
     component: ProyectoDos
   },
+  // {
+  //   path: 'formulario',
+  //   component: Formulario
+  // }
   {
-    path: 'formulario',
-    component: Formulario
-  }
+    path: 'formularios',
+    loadChildren: () => import('./features/formularios/formularios-routes').then(m => m.formulariosRoutes)
+  },
 ];
 

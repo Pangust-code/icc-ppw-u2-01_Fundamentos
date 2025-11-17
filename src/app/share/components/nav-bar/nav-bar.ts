@@ -10,6 +10,7 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
       background-color: darkblue;
       padding: 1rem;
       border-radius: 8px;
+
     }
     a {
       color: white;
